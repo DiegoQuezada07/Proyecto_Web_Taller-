@@ -1,0 +1,43 @@
+select registro.nombre, habitacion.nombre from registro INNER JOIN habitacion on registro.id_habitacion = habitacion.id;
+PREGUNTAR COMO LEVANTAR DOS PROYECTOS CON XAMPP. 
+PORQUE NO ME FUNCIONA. QUE ES PHPSERVER.
+
+{
+    usuario1: {
+        "nombre": "hola",
+        "apellido": "Chaj",
+    }
+    usuario: [{
+        nombre: holaa,
+        apellido: hola,
+        listadetareas:
+        {
+            asd
+        }]
+    }
+}
+
+{
+
+}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        console.log("hola");
+        $.ajax({
+            url:"http://localhost:3000/controller/RegistroController.php?action=listar",
+            type:"get",
+            data: {"action":"listar"},
+            dataType:"text"
+            
+           
+        }).done(function(data){
+            console.log(data);
+
+
+        });
+    }
+    );
+
+</script>
