@@ -1,0 +1,208 @@
+
+*{
+    font-family: Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    /* color: #FFEBC1; */
+}
+/*
+Inicio Barra Navegacion Lateral
+*/
+
+nav.side{
+    position: fixed;
+    margin-top: 55px;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: #246E89;
+    transition: left 0.4s ease;
+}
+
+nav.side.show{
+    left: 0px;
+}
+.btn-menu-lateral{
+    position: absolute;
+    top: 80px;
+    left: 45px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+
+.btn-menu-lateral.click{
+    left: 260px;
+    transform: rotate(-180deg);
+}
+.btn-menu-lateral span.icon-lateral{
+    font-size: 40px;
+    color: #246E89;
+}
+.btn-menu-lateral span.icon-lateral:hover{
+    color: #BAE7E0;
+    transition: 0.4s ease;
+
+}
+
+nav.side .text{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+nav.side ul.lateral{
+    background: #246E89;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+.side .lateral li{
+    line-height: 60px;
+    border-bottom: 1px solid #BAE7E0;
+}
+
+.side .lateral li a{
+    position: relative;
+    color: #BAE7E0;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+}
+
+.side .lateral li a:hover{
+    color: #246E89;
+    background: #BAE7E0;
+    display: block;
+}
+
+.side ul.lateral ul{
+    position: static;
+    display: none;
+}
+.side ul.lateral ul li{
+    border-bottom: none;
+    border-left: 3px solid #246E89;
+    background: #BAE7E0;
+}
+.side ul.lateral ul li a{
+    font-size: 16px;
+    color: #246E89;
+}
+.side ul.lateral ul li a:hover{
+    background: #246E89;
+    color: #BAE7E0;
+}
+
+.side ul.lateral .feat-show.show{
+    display: block;
+
+}
+.side .lateral span.icon-left i{
+    position: relative;
+    top: 10px;
+
+}
+
+.side .lateral i{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+.side .lateral a span i.rotate{
+    transform: translateY(0%) rotate(-180deg);
+}
+
+.side .lateral ul:hover {
+    display: block;
+}
+/*
+Final Barra Navegacion Lateral
+*/
+
+
+
+header {
+    width: 100%;
+    height: auto;  
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+h1 {
+    color: #246E89;
+    font-weight: 900;
+    font-size: 34px;
+    padding: 6px;
+    text-align: center;    
+}
+/* barra de navegacion */
+nav.top {
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;   
+   text-decoration: none;
+   background-color: white;
+   opacity: 0.9;
+   /* outline: solid #246E89; */
+   outline-offset: -4px;
+}
+nav.top ul.arriba {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav.top a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #246E89;
+    transition: all 500ms ease;
+    
+}
+nav.top li {    
+    padding: 15px 0px;
+    text-decoration: none;
+    color: #BAE7E0;
+    transition: all 500ms ease;
+    border-left:#246E89 solid 2px;
+}
+nav.top li i{    
+    margin: 0 5px;
+}
+nav.top li a i{
+    color: #246E89;
+}
+nav.top a:hover {
+    background: #246E89;
+    color: #BAE7E0;
+}   
+
+.submenu{
+    background: white;
+    display: none;
+    text-align: center;
+}
+nav.top ul.arriba li a:hover + ul.arriba, nav.top
+.submenu:hover{
+    display: block;
+    margin: 1.1% 0px;
+    position: fixed;
+    text-align: center;
+    padding-right: 8px; 
+}

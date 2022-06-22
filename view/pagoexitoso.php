@@ -1,0 +1,2 @@
+LA COMPRA SE REALIZÓ CON EXITO
+<?php
